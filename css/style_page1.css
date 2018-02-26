@@ -8,6 +8,7 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items:center;
+
 	
 }
 
@@ -16,7 +17,7 @@ body {
 	font-family:"Open_Sans_Semibold";
 	font-size: 21px;
 	position: relative;
-	bottom:160px;
+	bottom:172px;
 	
 	
 }
@@ -26,15 +27,12 @@ body {
 	border-radius: 125.5px;
 	border:3px solid #bebebe;
 	position: absolute;
-	margin-top: -90px;
-	height: 150px;
-	
-	
-	
+	margin-top: -88px;
+	height: 139px;	
 }
 
 .bg {
-	height: 210px;
+	height: 235px;
 	width: 300px;
 	margin-top:200px;
 }
@@ -43,10 +41,17 @@ body {
 	font: 14px "FiraSans-Bold";
 	color: #ffffff;
 	border-radius: 19px;
-	width: 190px;
-	height: 40px;
+	width: 139px;
+	height: 39px;
 	background: #33c1e3;
 	border:1px solid white;
 	position: relative;
-	bottom: 155px;
+	bottom: 160px;
 }
+
+.button:hover {
+	background: #ffffff;
+	border:1px solid #33c1e3;
+	color:#33c1e3;
+	cursor: pointer;
+	}
