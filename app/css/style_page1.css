@@ -3,6 +3,10 @@ body {
 	background: #f6f6f6;
 }
 
+a {
+ 	text-decoration: none;
+ }
+
 .wrapper {
 	display: flex;
 	width: 100%;
@@ -30,9 +34,11 @@ body {
 
 .fio {
 	text-align: center;
+	align-items: center;
 	font-family:"Open_Sans_Semibold";
 	font-size: 21px;
 	margin:20px auto;
+	width: 80px;
 }
 
 .img {
@@ -49,13 +55,12 @@ body {
 	position: absolute;	
 }
 
-
 .button {
 	font: 14px "FiraSans-Bold";
 	color: #ffffff;
 	border-radius: 19px;
-	width: 139px;
-	height: 39px;
+	width: 140px;
+	height: 40px;
 	background: #33c1e3;
 	border:2px solid white;	
 }
@@ -75,4 +80,10 @@ body {
 	height: 78px;
 	background: #33c1e3;
 	border-radius: 0 0 8px 8px;
+}
+
+.go-to {
+    height: 36px;
+    text-align: center;
+    vertical-align: middle;
 }
