@@ -121,7 +121,7 @@ li {
 	margin: 0px;
 }
 .nav__item {
-	width: 200px;
+	width: 210px;
 }
 .nav__link {
 	font:18px "FiraSans-Regular";
@@ -226,7 +226,7 @@ li {
 	position: relative;
 	height: 30px;
 	width: 30px;
-	margin: 10px;
+	padding: 4px;
 }
 
 .social__item img {

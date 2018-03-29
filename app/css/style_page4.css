@@ -1,0 +1,239 @@
+body {
+	margin: 0px;
+	padding: 0px;
+}
+
+a {
+ 	text-decoration: none;
+ 	color: #414141;
+ 	display: block;
+ 	font-family: "FiraSans-Light";
+ }
+
+li {
+ 	list-style-type: none;
+ }
+
+i {
+ 	padding-right: 10px;
+ }
+
+.wrapper {
+	background: #f6f6f6;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	max-width: 960px;
+	display: flex;
+	margin: 0px auto;
+	justify-content:space-between;
+}
+
+/*header*/
+.header {
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	box-shadow: 0 0 5px #d5d5d5;
+}
+
+/*left*/
+.header__left {
+	display: flex;
+	align-items: center;
+}
+
+.gosling {
+	width: 60px;
+	height: 60px;
+	border-radius: 30px;
+	border:2px solid #bebebe;
+}
+
+.user__name{
+	margin-left: 20px;
+	font: 18px "FiraSans-Regular";
+	color: #414141;
+}
+/*left end*/
+
+/*right*/
+.header__right {
+	display: flex;
+	align-items: center;
+}
+
+.fa-mes, .fa-ph, .fa-sk {
+	color: #33c1e3;
+	padding-right: 5px;
+}
+
+.contacts {
+	color: #33c1e3;
+	border-bottom: 2px dotted #33c1e3;
+	position: relative;
+	font:18px "FiraSans-Bold";
+}
+.contacts:hover {
+	color: #e85f61;
+	border-color: #e85f61;
+	cursor: pointer; 
+}
+
+.list {
+	width: 200px;
+	padding: 10px;
+	border: 1.5px solid #dedede;
+	border-radius: 9px;
+	background: #ffffff;
+	position: absolute;
+	display: none;
+	justify-content: center;
+}
+.list__item {
+	padding:10px;
+	align-items: center;
+}
+
+.header__right:hover .list {
+	display: block;
+	transform: translate(-30px, 0px);
+}
+/*right end*/
+
+/*content*/
+.content {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+}
+
+.page__content {
+	display: flex;
+}
+
+/*nav*/
+.nav {
+	height: 100%;
+	width: 220px;
+	margin: 0px;
+}
+.nav__item {
+	width: 210px;
+}
+.nav__link {
+	font:18px "FiraSans-Regular";
+	color:#414141;
+	padding: 15px;
+}
+.nav__link:hover {
+	cursor: pointer;
+	font-family: "FiraSans-Bold";
+	color: #33c1e3;
+	border-right: 5px solid #33c1e3;
+}
+.nav__link__active {
+	font-family: "FiraSans-Bold";
+	font-size: 18px;
+	color: #33c1e3;
+	border-right: 5px solid #33c1e3;
+	padding: 14px;
+}
+
+.sidebar {
+	padding: 0px;
+}
+
+/*content*/
+
+
+
+/*footer*/
+.footer {
+	background: #414141;
+	width: 100%;
+	height: 8%;
+}
+
+.footer__left{
+	font-family: "FiraSans-Light";
+	color: #9c9c9c;
+}
+.fa-cp {
+	color: #9c9c9c;
+}
+
+.footer__right {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.social__item {
+	position: relative;
+	height: 30px;
+	width: 30px;
+	padding: 4px;
+}
+
+.social__item img {
+	position: absolute;
+}
+
+.social__item .first-fb {
+	opacity: 1;
+}
+.social__item .first-fb:hover {
+	opacity: 0;
+}
+
+.social__item .second-fb, .social__item .second-fb:hover {
+	opacity: 0;
+}
+
+.social__item .second-fb:hover {
+	opacity: 1;
+	-moz-transition: all 0.5s ease;
+  	-webkit-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+}
+
+.social__item .first-vk {
+	opacity: 1;
+}
+.social__item .first-vk:hover {
+	opacity: 0;
+}
+.social__item .second-vk, .social__item .second-vk:hover {
+	opacity: 0;
+}
+.social__item .second-vk:hover {
+	opacity: 1;
+	-moz-transition: all 0.5s ease;
+  	-webkit-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+}
+
+.social__item .first-tw {
+	opacity: 1;
+}
+.social__item .first-tw:hover {
+	opacity: 0;
+}
+.social__item .second-tw, .social__item .second-tw:hover {
+	opacity: 0;
+}
+.social__item .second-tw:hover {
+	opacity: 1;
+	-moz-transition: all 0.5s ease;
+  	-webkit-transition: all 0.5s ease;
+  	-o-transition: all 0.5s ease;
+  	transition: all 0.5s ease;
+}
