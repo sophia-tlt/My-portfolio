@@ -7,7 +7,8 @@ a {
  	text-decoration: none;
  	color: #414141;
  	display: block;
- 	font-family: "FiraSans-Light";
+ 	font-family: "Fira Sans";
+ 	font-weight: 300;
  }
 
 li {
@@ -57,7 +58,8 @@ i {
 
 .user__name{
 	margin-left: 20px;
-	font: 18px "FiraSans-Regular";
+	font: 18px "Fira Sans";
+	font-weight: 400;
 	color: #414141;
 }
 /*left end*/
@@ -65,19 +67,17 @@ i {
 /*right*/
 .header__right {
 	display: flex;
-	align-items: center;
-}
-
-.fa-mes, .fa-ph, .fa-sk {
-	color: #33c1e3;
-	padding-right: 5px;
+	margin-top: 38px;
+	height: 40px;
 }
 
 .contacts {
 	color: #33c1e3;
 	border-bottom: 2px dotted #33c1e3;
 	position: relative;
-	font:18px "FiraSans-Bold";
+	font:18px "Fira Sans";
+	font-weight: 700;
+	height: 20px;
 }
 .contacts:hover {
 	color: #e85f61;
@@ -94,6 +94,7 @@ i {
 	position: absolute;
 	display: none;
 	justify-content: center;
+	right: -50px;
 }
 .list__item {
 	padding:10px;
@@ -102,7 +103,41 @@ i {
 
 .header__right:hover .list {
 	display: block;
-	transform: translate(-30px, 0px);
+}
+
+.header__right:hover .triangle {
+	display: block;
+}
+
+.triangle {
+	display: none;
+ 	position: absolute;
+ 	width: 0px;
+ 	height: 0px;
+ 	border-top: none;
+ 	border-left: 10px solid transparent;
+ 	border-right: 10px solid transparent;
+ 	border-bottom: 10px solid #dedede;
+ 	right: 50px;
+ 	top: 31px;
+ }
+  .triangle:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: none;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    top: 2px;
+    left: -10px;
+    z-index: 110; 
+}
+
+.fa-mes, .fa-ph, .fa-sk {
+	color: #33c1e3;
+	padding-right: 5px;
 }
 /*right end*/
 
@@ -122,27 +157,29 @@ i {
 	height: 100%;
 	width: 220px;
 	margin: 0px;
+	text-align: right;
 }
 .nav__item {
-	width: 210px;
+	display: inline-block;
 }
+
 .nav__link {
-	font:18px "FiraSans-Regular";
+	font:18px "Fira Sans";
+	font-weight: 400;
 	color:#414141;
 	padding: 15px;
 }
 .nav__link:hover {
 	cursor: pointer;
-	font-family: "FiraSans-Bold";
 	color: #33c1e3;
 	border-right: 5px solid #33c1e3;
 }
+
 .nav__link__active {
-	font-family: "FiraSans-Bold";
-	font-size: 18px;
+	font-family: "Fira Sans";
+	font-weight: 700;
 	color: #33c1e3;
 	border-right: 5px solid #33c1e3;
-	padding: 14px;
 }
 
 .sidebar {
@@ -151,25 +188,46 @@ i {
 
 /*content*/
 .h1 {
- 	font-family: "FiraSans-Medium";
-	padding: 5px 30px;
+ 	font-family: "Fira Sans";
+ 	font-weight: 500;
+	padding-left:30px;
 	color: #414141;
 	height: 100%;
-	width: 300px;
+	width: 250px;
 	margin: 0px;
  }
 
+.career_list {
+	width: 465px;
+}
 .career {
  	width: 370px;
  	height: 110px;
  	background: #ffffff;
- 	margin: 20px;
  	box-shadow: 0 0 5px #d5d5d5;
  	border-radius: 20px;
- 	font-family: "FiraSans-Light";
+ 	font-family: "Fira Sans";
+ 	font-weight: 300;
+ 	float: right;
+ 	display: inline-block;
+ 	margin-top: 25px;
  }
 
- .h3 {
+ .career:hover .year{
+ 	color: #33c1e3;
+ 	font-family: "Fira Sans";
+ 	font-weight: 700;
+ }
+
+.career:hover {
+	background: #33c1e3;
+}
+
+.career:hover p {
+	color: #fff;
+}
+
+.h3 {
  	padding: 10px 20px;
 	color: #414141;
 	margin: 0px;
@@ -183,10 +241,21 @@ i {
 
 .year {
 	color: #727272;
-
-
+	position: absolute;
+	right: 45%;
 }
 
+.senior {
+	margin-top: 30px;
+}
+
+.medium {
+	
+}
+
+.junior {
+
+}
 
 /*footer*/
 .footer {
@@ -196,7 +265,8 @@ i {
 }
 
 .footer__left{
-	font-family: "FiraSans-Light";
+	font-family: "Fira Sans";
+	font-weight: 300;
 	color: #9c9c9c;
 }
 .fa-cp {

@@ -8,7 +8,8 @@ a {
  	text-decoration: none;
  	color: #414141;
  	display: block;
- 	font-family: "FiraSans-Light";
+ 	font-family: "Fira Sans";
+ 	font-weight: 300;
  }
 
 li {
@@ -58,7 +59,8 @@ li {
 
 .user__name{
 	margin-left: 20px;
-	font: 18px "FiraSans-Regular";
+	font: 18px "Fira Sans";
+	font-weight: 400;
 	color: #414141;
 }
 /*left end*/
@@ -66,14 +68,17 @@ li {
 /*right*/
 .header__right {
 	display: flex;
-	align-items: center;
+	margin-top: 38px;
+	height: 40px;
 }
 
 .contacts {
 	color: #33c1e3;
 	border-bottom: 2px dotted #33c1e3;
 	position: relative;
-	font:18px "FiraSans-Bold";
+	font:18px "Fira Sans";
+	font-weight: 700;
+	height: 20px;
 }
 .contacts:hover {
 	color: #e85f61;
@@ -90,6 +95,7 @@ li {
 	position: absolute;
 	display: none;
 	justify-content: center;
+	right: -50px;
 }
 .list__item {
 	padding:10px;
@@ -98,7 +104,36 @@ li {
 
 .header__right:hover .list {
 	display: block;
-	transform: translate(-30px, 0px);
+}
+
+.header__right:hover .triangle {
+	display: block;
+}
+
+.triangle {
+	display: none;
+ 	position: absolute;
+ 	width: 0px;
+ 	height: 0px;
+ 	border-top: none;
+ 	border-left: 10px solid transparent;
+ 	border-right: 10px solid transparent;
+ 	border-bottom: 10px solid #dedede;
+ 	right: 50px;
+ 	top: 31px;
+ }
+  .triangle:before {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-top: none;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid white;
+    top: 2px;
+    left: -10px;
+    z-index: 110; 
 }
 
 .fa-mes, .fa-ph, .fa-sk {
@@ -119,12 +154,15 @@ li {
 	height: 100%;
 	width: 220px;
 	margin: 0px;
+	text-align: right;
 }
 .nav__item {
-	width: 210px;
+	display: inline-block;
 }
+
 .nav__link {
-	font:18px "FiraSans-Regular";
+	font:18px "Fira Sans";
+	font-weight: 400;
 	color:#414141;
 	padding: 15px;
 }
@@ -135,7 +173,8 @@ li {
 }
 
 .nav__link__active {
-	font-family: "FiraSans-Bold";
+	font-family: "Fira Sans";
+	font-weight: 700;
 	color: #33c1e3;
 	border-right: 5px solid #33c1e3;
 }
@@ -145,7 +184,7 @@ li {
 }
 
 /*content*/
-.page__content {
+.page__content_page1 {
 	display: flex;
 	flex-direction: row;
 }
@@ -156,12 +195,14 @@ li {
 }
 
 .h1 {
-	font-family: "FiraSans-Medium";
+	font-family: "Fira Sans";
+	font-weight: 500;
 	margin-left: 40px;
 }
 
 .about__desk {
-	font-family: "FiraSans-Light";
+	font-family: "Fira Sans";
+	font-weight: 300;
 	color: #646464;
 	max-height: 300px;
 	max-width: 380px;
@@ -174,7 +215,8 @@ li {
 }
 
 .btn {
-	font-family: "FiraSans-Bold";
+	font-family: "Fira Sans";
+	font-weight: 700;
 	color: #e85f61;
 	border:1px solid #e85f61;
 	border-radius: 30px;
@@ -200,7 +242,6 @@ li {
 	padding: 0px 10px 0px 5px;
 }
 
-
 /*footer*/
 .footer {
 	background: #414141;
@@ -209,7 +250,8 @@ li {
 }
 
 .footer__left{
-	font-family: "FiraSans-Light";
+	font-family: "Fira Sans";
+	font-weight: 300;
 	color: #9c9c9c;
 }
 .fa-cp {
@@ -240,7 +282,7 @@ li {
 	opacity: 0;
 }
 
-.social__item .second-fb, .social__item .second-fb:hover {
+.social__item .second-fb {
 	opacity: 0;
 }
 
@@ -258,7 +300,7 @@ li {
 .social__item .first-vk:hover {
 	opacity: 0;
 }
-.social__item .second-vk, .social__item .second-vk:hover {
+.social__item .second-vk {
 	opacity: 0;
 }
 .social__item .second-vk:hover {
@@ -275,7 +317,7 @@ li {
 .social__item .first-tw:hover {
 	opacity: 0;
 }
-.social__item .second-tw, .social__item .second-tw:hover {
+.social__item .second-tw {
 	opacity: 0;
 }
 .social__item .second-tw:hover {
