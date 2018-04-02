@@ -155,6 +155,8 @@ li {
 	width: 220px;
 	margin: 0px;
 	text-align: right;
+	position: relative;
+	right: 5%;
 }
 .nav__item {
 	display: inline-block;
@@ -184,7 +186,7 @@ li {
 }
 
 /*content*/
-.page__content_page1 {
+.page__content {
 	display: flex;
 	flex-direction: row;
 }

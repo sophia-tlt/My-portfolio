@@ -158,6 +158,8 @@ i {
 	width: 220px;
 	margin: 0px;
 	text-align: right;
+	position: relative;
+	right: 5%;
 }
 .nav__item {
 	display: inline-block;

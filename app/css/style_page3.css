@@ -158,6 +158,8 @@ i {
 	width: 220px;
 	margin: 0px;
 	text-align: right;
+	position: relative;
+	right: 5%;
 }
 .nav__item {
 	display: inline-block;
@@ -210,7 +212,18 @@ i {
  	font-weight: 300;
  	float: right;
  	display: inline-block;
- 	margin-top: 25px;
+ 	margin-top: 14px;
+ }
+
+ .career:before {
+ 	content: "";
+ 	width: 1px;
+ 	height: 100px;
+ 	background: #dddddd;
+ 	display: block;
+ 	position: absolute;
+ 	left: 57%;
+
  }
 
  .career:hover .year{
@@ -218,43 +231,62 @@ i {
  	font-family: "Fira Sans";
  	font-weight: 700;
  }
-
 .career:hover {
 	background: #33c1e3;
+	cursor: pointer;
 }
 
-.career:hover p {
+.career:hover .dev {
+	color: #fff;
+}
+.career:hover .h3 {
 	color: #fff;
 }
 
+.career:hover .year:after {
+	border-color: #94e0f2;
+}
+
 .h3 {
- 	padding: 10px 20px;
+ 	padding: 20px 20px 5px;
 	color: #414141;
 	margin: 0px;
+	font-family: "Fira Sans";
+	font-weight: 500;
+	font-size: 18px;
  }
 
 .dev {
 	margin: 0px;
 	padding: 2px 20px;
 	color: #727272;
+	font-family: "Fira Sans";
+	font-weight: 400;
+	font-size: 18px;
 }
 
 .year {
 	color: #727272;
 	position: absolute;
 	right: 45%;
+	line-height: 110px;
+}
+.year:after {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    background: #33c1e3;
+    border: 5px solid #f6f6f6;
+    position: absolute;
+    right: -100%;
+    top: 50%;
+    margin-top: -10px;
+    border-radius: 50%;
 }
 
 .senior {
-	margin-top: 30px;
-}
-
-.medium {
-	
-}
-
-.junior {
-
+	margin-top: 80px;
 }
 
 /*footer*/
