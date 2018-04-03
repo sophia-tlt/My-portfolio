@@ -60,9 +60,14 @@ i {
 
 .user__name{
 	margin-left: 20px;
-	font: 18px "Fira Sans";
-	font-weight: 400;
+	font-family:"Fira Sans";
+	font-weight: 500;
 	color: #414141;
+	font-size: 18px;
+}
+.user__name:hover {
+	color: #e85f61;
+	font-weight: 600;
 }
 /*left end*/
 
