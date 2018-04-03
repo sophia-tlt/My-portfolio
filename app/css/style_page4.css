@@ -152,6 +152,7 @@ i {
 
 .page__content {
 	display: flex;
+	flex-direction: column;
 }
 
 /*nav*/
@@ -190,8 +191,66 @@ i {
 	padding: 0px;
 }
 
-/*content page*/
+/*content*/
+.portfolio {
+	font-family: "Fira Sans";
+	font-weight: 500;
+	color: #414141;
+}
 
+.works {
+	display: flex;
+	flex-direction: row;
+	max-width: 780px;
+    height: 100%;
+    flex-wrap: wrap;
+    overflow: auto;
+}
+
+.content1 {
+	-webkit-transform: scale(1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(1);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+    margin: 10px;
+    height: 284px;
+}
+.content1:hover {
+	-webkit-transform: scale(1.1,1.1);
+    -webkit-transition-timing-function: ease-out;
+    -webkit-transition-duration: 550ms;
+    -moz-transform: scale(0.2,0.2);
+    -moz-transition-timing-function: ease-out;
+    -moz-transition-duration: 550ms;
+    z-index: 10;
+}
+
+.h3 {
+	color: #33c1e3;
+	font-size: 21px;
+	font-family: "Fira Sans";
+	font-weight: 400;
+	margin: 0px;
+}
+.landing {
+	position: relative;
+}
+
+.pic-text {
+	position: absolute;
+	top:63%;
+	left:11%;
+}
+
+.discription {
+	margin: 10px 0px 5px 0px;
+}
+
+.disc-page {
+	margin: 0px;
+}
 
 /*footer*/
 .footer {
