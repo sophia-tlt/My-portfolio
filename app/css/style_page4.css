@@ -1,3 +1,4 @@
+/*general*/
 body {
 	margin: 0px;
 	padding: 0px;
@@ -95,6 +96,7 @@ i {
 	display: none;
 	justify-content: center;
 	right: -50px;
+	z-index: 100;
 }
 .list__item {
 	padding:10px;
@@ -188,7 +190,7 @@ i {
 	padding: 0px;
 }
 
-/*content*/
+/*content page*/
 
 
 /*footer*/
