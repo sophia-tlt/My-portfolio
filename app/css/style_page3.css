@@ -34,6 +34,7 @@ i {
 	display: flex;
 	margin: 0px auto;
 	justify-content:space-between;
+	position: relative;
 }
 
 /*header*/
@@ -152,6 +153,7 @@ i {
 
 .page__content {
 	display: flex;
+	overflow: auto;
 }
 
 /*nav*/
@@ -297,6 +299,8 @@ i {
 	background: #414141;
 	width: 100%;
 	height: 8%;
+	position: absolute;
+    bottom: 0;
 }
 
 .footer__left{
